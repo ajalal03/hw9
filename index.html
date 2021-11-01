@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Songs</title>
+<script  src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="songs.json"></script>
+</head>
+    
+<body>
+    <script language="javascript">
+
+        songs = JSON.stringify(songs);
+        song = JSON.parse(songs);
+        document.write(songs);
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        
+        for (i = 0; i < 10; i++) {
+            document.write(song[i].title + "<br>");
+            document.write("Artist: " + song[i].artist + "<br>");
+            document.write("Genre: " + song[i].genre + "<br>");
+            document.write("Released: " + song[i].year + "<br>");
+            document.write("<br>")
+        }
+        
+        $(document).ready(function() {
+            $('button').click(function() {
+                document.getElementById("selected").innerHTML = "";
+                
+                var genre;
+                if ($('select[name="genres"] option:selected').index() == 0) {
+                    genre = "Rap";
+                } else if ($('select[name="genres"] option:selected').index() == 1) {
+                    genre = "Hip Hop"
+                } else if ($('select[name="genres"] option:selected').index() == 2) {
+                    genre = "R/B"
+                }
+                
+                for (i = 0; i < 10; i++) {
+                    if (song[i].genre[0] == genre || song[i].genre[1] == genre) {
+                        document.getElementById("selected").innerHTML += song[i].title + "<br>";
+                    }
+                }
+            })
+        })
+    
+    </script>
+    
+    <br>
+    <h3>Choose a genre</h3>
+    <select name="genres" id="genres">
+        <option value="Rap">Rap</option>
+        <option value="Hip Hop">Hip Hop</option>
+        <option value="R/B">R/B</option>
+    </select>
+    <button id="filter">Filter</button>
+    
+    <div id="selected"></div>
+    
+</body>
+</html>

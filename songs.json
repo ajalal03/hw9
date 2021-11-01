@@ -1,0 +1,62 @@
+songs = [  
+{
+    "title": "Bound2",
+	"artist": "Kanye West",
+	"genre": ["Hip Hop",],
+	"year": 2013,
+},
+{
+    "title": "Use this Gospel",
+	"artist": "Kanye West",
+	"genre": ["Gospel"],
+	"year": 2019,
+},
+{
+    "title": "All Day",
+	"artist": "Kanye West",
+	"genre": ["Rap"],
+	"year": 2015,
+},
+{
+    "title": "Champion",
+	"artist": "Kanye West",
+	"genre": ["Hip Hop"],
+	"year": 2008,
+},
+{
+    "title": "Good Life",
+	"artist": "Kanye West",
+	"genre": ["Hip Hop"],
+	"year": 2008, 
+},
+{
+    "title": "Don't Matter to Me",
+	"artist": "Drake",
+	"genre": ["R/B"],
+	"year": 2018,
+},
+{
+    "title": "Started from the Bottom",
+	"artist": "Drake",
+	"genre": ["Rap"],
+	"year": 2013,
+},
+{
+    "title": "Controlla",
+	"artist": "Drake",
+	"genre": ["R/B", "Hip Hop"],
+	"year": 2016,
+},
+{
+    "title": "Hype",
+	"artist": "Drake",
+	"genre": ["Rap"],
+	"year": 2012,
+},
+{
+    "title": "God's Plan",
+	"artist": "Drake",
+	"genre": ["Hip Hop", "R/B"],
+	"year": 2018,
+}
+]
